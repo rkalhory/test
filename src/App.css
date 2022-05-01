@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+body{
+    direction: rtl;
+    text-align: right;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+    max-width: 100%;
+    height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.list .item{
+    border: solid 1px #eee;
+    width: 15%;
+    flex: 0 0 15%;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.list .item img{
+    width: 100%;
+    height: 80px;
+    object-position: center;
+    object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list .item h2{
+    font-size: 14px;
+
+}
+
+.cart{
+    width: 250px;
+    border: solid 1px #eee;
+    margin-bottom: 40px;
+    padding: 15px;
+}
+
+.cart-list .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px #eee;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.cart-list .item img{
+    width: 80px;
+    flex: 0 0 80px;
+    object-position: center;
+    object-fit: cover;
+    height: 50px;
+}
+
+.cart-list .item h2{
+    font-size: 14px;
+    line-height: 1.5;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cart-list .actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.cart-list .actions button{
+    margin-bottom: 5px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.preson-part{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.preson-part section{
+    width: 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding: 15px;
 }
